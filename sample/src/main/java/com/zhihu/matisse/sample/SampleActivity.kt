@@ -23,7 +23,6 @@ import android.content.Intent
 import android.content.pm.ActivityInfo
 import android.net.Uri
 import android.os.Build
-import android.os.Build.VERSION.SDK
 import android.os.Bundle
 import android.provider.MediaStore
 import android.util.Log
@@ -188,17 +187,16 @@ class SampleActivity : AppCompatActivity(), View.OnClickListener {
             val intent: Intent?
             when (input) {
                 DRACULA_THEME -> {
-                    intent = Matisse.from(this@SampleActivity).choose(MimeType.ofImage()).theme(R.style.Matisse_Dracula)
-                        .countable(false).restrictOrientation(requestedOrientation)
-                        .addFilter(GifSizeFilter(320, 320, 5 * Filter.K * Filter.K)).maxSelectable(9)
-                        .originalEnable(true).maxOriginalSize(10).imageEngine(PicassoEngine()).createIntent()
-
+                    intent = Matisse.from(this@SampleActivity).choose(MimeType.ofImage()).theme(R.style.SimpleMatisse)
+                        .countable(true)
+                        .maxSelectable(1)
+                        .createIntent()
                 }
 
                 MATERIAL_DESIGN_3_THEME -> {
                     intent = Matisse.from(this@SampleActivity).choose(MimeType.ofImage()).theme(R.style.Matisse_M3)
                         .restrictOrientation(requestedOrientation).countable(false)
-                        .addFilter(GifSizeFilter(320, 320, 5 * Filter.K * Filter.K)).maxSelectable(9)
+                        .maxSelectable(9)
                         .autoHideToolbarOnSingleTap(true).originalEnable(true).maxOriginalSize(10)
                         .imageEngine(PicassoEngine()).createIntent()
 

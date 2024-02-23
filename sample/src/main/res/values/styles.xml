@@ -30,4 +30,46 @@
         <item name="colorButtonNormal">@color/dracula_primary</item>
     </style>
 
+    <style name="SimpleMatisse" parent="Matisse.Dracula">
+        <!-- 背景 neutral_background，内容 neutral_content -->
+        <item name="colorPrimary">#040304</item>
+        <item name="colorPrimaryDark">#040304</item>
+        <item name="album.dropdown.title.color">#f6f5fa</item>
+        <item name="album.dropdown.count.color">#f6f5fa</item>
+        <item name="album.element.color">#f6f5fa</item>
+        <!-- 占位图 neutral_surface -->
+        <item name="album.thumbnail.placeholder">#282729</item>
+        <item name="album.emptyView">@drawable/ic_empty_dracula</item>
+        <item name="album.emptyView.textColor">#f6f5fa</item>
+
+        <!-- 拍照卡片背景 neutral_surface -->
+        <item name="item.placeholder">#282729</item>
+        <!-- primary_brand -->
+        <item name="item.checkCircle.backgroundColor">#E85392</item>
+        <!-- neutral_content -->
+        <item name="item.checkCircle.borderColor">#F6F5FA</item>
+        <!-- neutral_background -->
+        <item name="page.bg">#040304</item>
+
+        <!-- bottomToolbar -->
+        <!-- neutral_surface_medium -->
+        <item name="bottomToolbar.bg">#201f20</item>
+        <item name="bottomToolbar.preview.textColor">@color/simple_bottom_toolbar</item>
+        <item name="bottomToolbar.apply.textColor">@color/simple_bottom_toolbar</item>
+
+        <!-- 预览 bottomToolbar -->
+        <item name="preview.bottomToolbar.back.textColor">#F6F5FA</item>
+        <item name="preview.bottomToolbar.apply.textColor">#F6F5FA</item>
+
+        <item name="android:listPopupWindowStyle">@style/Sample.Popup</item>
+        <item name="listPopupWindowStyle">@style/Sample.Popup</item>
+        <!-- neutral_content -->
+        <item name="capture.textColor">#F6F5FA</item>
+    </style>
+
+    <style name="Sample.Popup" parent="Widget.AppCompat.ListPopupWindow">
+        <!-- neutral_surface -->
+        <item name="android:popupBackground">#282729</item>
+    </style>
+
 </resources>

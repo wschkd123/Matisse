@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- neutral_content_disabled -->
+    <item android:color="#4A484D"
+          android:state_enabled="false"/>
+    <!-- neutral_content -->
+    <item android:color="#F6F5FA"/>
+</selector>
